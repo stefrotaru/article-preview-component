@@ -127,18 +127,21 @@ body {}
     height: 4rem;
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 1rem;
-    position: fixed;
-    left: 65.5%;
-    bottom: 44.5%;
+    position: absolute;
+    left: 65.4%;
+    bottom: 42%;
+    opacity: 0;
     font-size: .9rem;
     letter-spacing: .2rem;
     color: var(--col-grayish-blue);
     background-color: var(--col-very-dark-grayish-blue);
     box-shadow: 3px 8px 34px -12px #9C9C9C;
     
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    transition: all 0.3s ease-in-out;
 }
 .share-container::before {
     content: "";
@@ -153,6 +156,12 @@ body {}
     bottom: -20px;
 
     box-shadow: 3px 8px 34px -12px #9C9C9C;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.show {
+    opacity: 1;
 }
 
 @media screen and (max-width: 675) {
