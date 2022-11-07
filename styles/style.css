@@ -43,7 +43,8 @@ body {}
     background-color: white;
     box-shadow: 3px 8px 34px -12px #9C9C9C;
     border-radius: 1rem;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* position: fixed; */
 
     display: flex;
 }
@@ -53,6 +54,8 @@ body {}
     min-width: 22.5rem;
     object-fit: cover;
     object-position: -.3rem;
+
+    border-radius: 1rem 0 0 1rem; /* only for landscape view */
 }
 
 .article {
@@ -75,6 +78,8 @@ body {}
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
 }
 
 .article__author-box__avatar {
@@ -128,8 +133,10 @@ body {}
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 1rem;
     position: absolute;
-    left: 65.4%;
-    bottom: 42%;
+    /* left: 65.4%;
+    bottom: 42%; */
+    left: 22rem;
+    bottom: 140%;
     opacity: 0;
     font-size: .9rem;
     letter-spacing: .2rem;
@@ -164,6 +171,8 @@ body {}
     opacity: 1;
 }
 
-@media screen and (max-width: 675) {
-    
+@media screen and (max-width: 935px) {
+    .container {
+
+    }
 }
